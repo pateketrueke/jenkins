@@ -1,7 +1,4 @@
 # WIP
 
-- [ ] Any change in this code should trigger a build on Jenkins
-- [ ] Tasks ran within first `< 5min` should be executed then
-- [ ] This should be triggered immediately!
-
-I just disabled triggers...
+- [x] Any change in this code should trigger a build on Jenkins
+- [ ] It will run .travis.yml for linting, testing, coverage, etc.

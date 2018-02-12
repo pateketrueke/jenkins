@@ -1,2 +1,5 @@
 script:
-  - echo OK
+  - npm run test:ci
+
+after_success:
+  - npm run cover:up
