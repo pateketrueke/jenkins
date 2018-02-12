@@ -1,0 +1,38 @@
+{
+  "name": "jenkins",
+  "version": "0.0.0",
+  "description": "Example project for testing Jenkins + GitHub",
+  "main": "lib/util.js",
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "istanbul": "^0.4.5",
+    "jasmine-node": "^2.0.0-beta4"
+  },
+  "scripts": {
+    "lint": "eslint lib",
+    "spec": "jasmine-node spec --coffee --noStackTrace --captureExceptions",
+    "cover": "istanbul cover --root lib --x '**/spec/**' -- jasmine-node spec --coffee",
+    "cover:up": "codecov --file=coverage/lcov.info --disable=gcov -e TRAVIS_NODE_VERSION",
+    "test": "npm run lint && npm run spec",
+    "test:ci": "npm run lint && npm run cover"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pateketrueke/jenkins.git"
+  },
+  "keywords": [
+    "jenkins",
+    "github",
+    "ci"
+  ],
+  "author": "Alvaro Cabrera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pateketrueke/jenkins/issues"
+  },
+  "homepage": "https://github.com/pateketrueke/jenkins#readme",
+  "dependencies": {}
+}

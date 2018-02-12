@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - 8
+
+install:
+  # this is used on Jenkins only
+  - '(ls node_modules 2>/dev/null) || npm install'
+
+script:
+  - npm run test:ci
+
+after_success:
+  - npm run cover:up
