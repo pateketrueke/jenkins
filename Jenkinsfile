@@ -7,12 +7,14 @@ pipeline {
   agent any
   stages {
     stage('ENV') {
+      environment {
+        // extract custom secrets from project settings
+        CODECOV_TOKEN = credentials('CODECOV_TOKEN')
+      }
       steps {
-        // set some travis-ci environment vars
         script {
-          env.TRAVIS_BRANCH = "${env.GIT_BRANCH}"
-          env.TRAVIS_BUILD_ID = "${env.GIT_COMMIT}"
-          env.TRAVIS_EVENT_TYPE = "push"
+          // export given secrets
+          env.CODECOV_TOKEN = CODECOV_TOKEN
         }
       }
     }

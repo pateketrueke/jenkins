@@ -3,16 +3,14 @@
   "version": "0.0.0",
   "description": "Example project for testing Jenkins + GitHub",
   "main": "lib/util.js",
-  "dependencies": {
+  "devDependencies": {
+    "codecov": "^3.0.0",
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "dotenv": "^5.0.0",
     "istanbul": "^0.4.5",
-    "jasmine-node": "^2.0.0-beta4",
-    "jenkins": "^0.20.1"
+    "jasmine-node": "^2.0.0-beta4"
   },
-  "devDependencies": {},
   "scripts": {
     "lint": "eslint lib",
     "spec": "jasmine-node spec --coffee --noStackTrace --captureExceptions",
@@ -35,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/pateketrueke/jenkins/issues"
   },
-  "homepage": "https://github.com/pateketrueke/jenkins#readme"
+  "homepage": "https://github.com/pateketrueke/jenkins#readme",
+  "dependencies": {}
 }
