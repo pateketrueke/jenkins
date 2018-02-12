@@ -1,2 +1,2 @@
-script
-- echo OK
+script:
+  - echo OK
