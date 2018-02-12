@@ -8,3 +8,5 @@ pipeline {
     }
   }
 }
+
+simpleTravisRunner('.travis.yml')
