@@ -5,3 +5,4 @@
 
 - [x] Any change in this code should trigger a build on Jenkins
 - [x] It will run .travis.yml for linting, testing, coverage, etc.
+- [x] Provides an interactive dashboard for the command-line interface
