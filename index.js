@@ -34,7 +34,7 @@ const TABLE_CONFIG = {
   noCellBorders: false,
   fillCellBorders: true,
   columnSpacing: 4,
-  columnWidth: [60, 6, 10, 30, 24, 4],
+  columnWidth: [110, 6, 10, 30, 24, 4],
 };
 
 const TABLE_HEADERS = ['Name', 'Health', 'Result', 'Duration', 'Date', 'Job'];
