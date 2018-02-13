@@ -1,8 +1,8 @@
 {
-  "name": "jenkins",
+  "name": "jenkins-ci",
   "version": "0.0.0",
   "description": "Example project for testing Jenkins + GitHub",
-  "main": "lib/util.js",
+  "main": "index.js",
   "devDependencies": {
     "codecov": "^3.0.0",
     "eslint": "^4.17.0",
@@ -11,7 +11,16 @@
     "istanbul": "^0.4.5",
     "jasmine-node": "^2.0.0-beta4"
   },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.5",
+    "dotenv": "^5.0.0",
+    "jenkins": "^0.20.1",
+    "moment": "^2.20.1",
+    "moment.distance": "^1.0.1"
+  },
   "scripts": {
+    "start": "node index.js",
     "lint": "eslint lib",
     "spec": "jasmine-node spec --coffee --noStackTrace --captureExceptions",
     "cover": "istanbul cover --root lib --x '**/spec/**' -- jasmine-node spec --coffee",
@@ -33,6 +42,5 @@
   "bugs": {
     "url": "https://github.com/pateketrueke/jenkins/issues"
   },
-  "homepage": "https://github.com/pateketrueke/jenkins#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/pateketrueke/jenkins#readme"
 }
